@@ -47,4 +47,139 @@ Neural networks
 
 Linear and Logistic Regression (in many cases)
 
+17 | Encoding
+
+This notebook is part of the 100 Days of Machine Learning series. It covers the topic of categorical and numerical encoding techniques, showing how to prepare non-numeric features for machine learning models.
+
+Table of Contents
+
+Motivation
+
+Objectives
+
+Dataset overview
+
+Encoding techniques
+
+Label encoding
+
+One-hot encoding
+
+Ordinal encoding
+
+Frequency / target encoding (if covered)
+
+Implementation (with code)
+
+Model training & evaluation (post-encoding)
+
+Key takeaways
+
+Further reading & references
+
+Motivation
+
+Many machine learning algorithms expect numeric input. Real-world datasets often contain categorical (string/object) features such as colors, labels, or categories. Encoding converts these into a numeric form while preserving useful information. This notebook demonstrates how different encoding methods affect model performance and feature representation.
+
+Objectives
+
+By the end of this notebook you will be able to:
+
+Identify types of categorical features (nominal, ordinal).
+
+Choose an appropriate encoding method for a given categorical feature.
+
+Implement encoding using pandas, scikit-learn, or other relevant libraries.
+
+Understand how encoding interacts with downstream modelling (e.g., tree-based vs linear models).
+
+Recognize pitfalls: high-cardinality features, dummy-variable trap, information leakage.
+
+Dataset overview
+
+In this notebook:
+
+We load a sample dataset (describe the name of the dataset, number of rows/columns, and main categorical features).
+
+We highlight the categorical features that require encoding and examine their distributions.
+
+We split into training/test (or use cross-validation) ensuring encoding is applied correctly (i.e., fit only on training data, transform on test).
+
+Encoding techniques
+Label encoding
+
+Convert each category value to an integer code (e.g., Red→0, Green→1, Blue→2).
+
+Suitable for ordinal features (where categories have a meaningful order).
+
+Risky with nominal features if model interprets numeric codes as ordered.
+
+One-hot encoding
+
+Create binary/dummy variables for each category (e.g., Color_Red, Color_Green, Color_Blue).
+
+Works well for nominal features with relatively low cardinality.
+
+Can lead to high dimensionality if many categories.
+
+Beware the dummy-variable trap in linear models (perfect multicollinearity).
+
+Ordinal encoding
+
+Map categories to integer codes according to a defined order (e.g., Low→1, Medium→2, High→3).
+
+Only makes sense when the ordering is meaningful.
+
+Must define the ordering consciously.
+
+(Optional) Frequency or target encoding
+
+Frequency encoding replaces categories by their count or proportion in the dataset.
+
+Target encoding replaces categories by the average target value for that category.
+
+Useful for high-cardinality categorical features.
+
+Must handle leakage and overfitting with care (use CV, smoothing, etc.).
+
+Implementation
+
+Use pandas to explore and inspect categorical features: .dtypes, .value_counts().
+
+Use scikit-learn’s LabelEncoder, OneHotEncoder, OrdinalEncoder where suitable.
+
+Show before/after transformation shapes, sample transformed data.
+
+Illustrate how encoded data integrates with model input pipelines (e.g., ColumnTransformer).
+
+Show how to handle unseen categories in test set (set handle_unknown='ignore').
+
+Model training & evaluation
+
+Use a simple model (for example: logistic regression, random forest) to compare performance changes with different encoding techniques.
+
+Evaluate metrics (accuracy, F1 score, etc.) and observe how encoding choices impact them.
+
+Discuss model interpretability implications: coefficients for encoded variables, feature importance.
+
+Key takeaways
+
+There is no one-size-fits-all encoding method. The right choice depends on: the type of feature (nominal vs ordinal), model type, number of categories.
+
+Properly fitting encoding only on training data is critical to avoid data leakage.
+
+High-cardinality categorical features need special handling (e.g., dimensionality reduction, encoding with smoothing).
+
+Encoding affects both model performance and interpretability—keep feature engineering consistent and transparent.
+
+Always test different encoding strategies when building end-to-end pipelines.
+
+Further reading & references
+
+“Feature Engineering for Machine Learning” by Alice Zheng & Amanda Casari
+
+scikit-learn documentation: Preprocessing categorical features
+
+Articles on target encoding and leakage avoidance
+
 Gradient-based models in general
