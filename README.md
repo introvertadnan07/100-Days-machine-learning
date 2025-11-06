@@ -182,4 +182,43 @@ scikit-learn documentation: Preprocessing categorical features
 
 Articles on target encoding and leakage avoidance
 
+19 – Column Transformer
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📄 Overview
+
+In this notebook, we dive into the use of the ColumnTransformer class (from libraries like scikit-learn) to build preprocessing pipelines that apply different transformations to different columns – e.g., numeric vs categorical features.
+You’ll see how to:
+
+separate feature types (numerical, categorical)
+
+apply standard scaling, one-hot encoding (or other encodings)
+
+integrate preprocessing into a full ML pipeline
+
+improve code clarity and maintainability with transformers
+
+✅ Why this matters
+
+Pre-processing is often one of the most error-prone and messy parts of a machine-learning workflow. Using a ColumnTransformer helps by:
+
+keeping transformations organised
+
+ensuring consistent handling of train/test data
+
+streamlining pipelines for models and deployment
+
+🧠 What you’ll learn
+
+By working through this notebook you should become comfortable with:
+
+identifying columns by data type or role in the dataset
+
+using ColumnTransformer with Pipeline to chain steps
+
+comparing performance and maintenance benefits compared to ad-hoc preprocessing
+
+writing cleaner code that integrates effortlessly into training and inference
+
 Gradient-based models in general
