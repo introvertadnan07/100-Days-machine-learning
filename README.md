@@ -221,4 +221,26 @@ comparing performance and maintenance benefits compared to ad-hoc preprocessing
 
 writing cleaner code that integrates effortlessly into training and inference
 
+20 – Pipelines
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📖 Purpose
+
+This notebook introduces and demonstrates the use of pipelines (for example using scikit‑learn’s Pipeline, make_pipeline, and related tools) to streamline full data-preprocessing + model training flows. By chaining steps together, you’ll learn to build clean, repeatable, and maintainable ML workflows.
+
+🎯 What you’ll cover
+
+Crafting pipelines that unify preprocessing (scaling, encoding, etc) and model training
+
+Seeing how pipelines ease handling of train/test splits, cross-validation, and deployment
+
+Understanding how pipelines help avoid data-leakage and improve code modularity
+
+Enhancing readability and maintainability of ML scripts or notebooks
+
+🔧 Why it matters
+
+As ML workflows grow in complexity (multiple feature types, transforms, models, evaluation steps), using plain ad-hoc code gets error-prone and hard to manage. Pipelines bring structure, enforce the correct order of operations, and make it easier to update or replace one step without breaking the rest.
+
 Gradient-based models in general
