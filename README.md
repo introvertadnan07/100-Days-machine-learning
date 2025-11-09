@@ -244,3 +244,31 @@ Enhancing readability and maintainability of ML scripts or notebooks
 As ML workflows grow in complexity (multiple feature types, transforms, models, evaluation steps), using plain ad-hoc code gets error-prone and hard to manage. Pipelines bring structure, enforce the correct order of operations, and make it easier to update or replace one step without breaking the rest.
 
 Gradient-based models in general
+
+21 – Without Pipelines
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📘 Overview
+
+This notebook walks through how to perform preprocessing, model training, and evaluation without using pipelines. It serves as a practical comparison to the previous notebook — 20 – Pipelines — helping you understand why pipelines are valuable and what problems they solve.
+
+By working manually through each step, you’ll see the inner workings of data preparation and how each component fits together before automation.
+
+🎯 Learning objectives
+
+Understand how to handle preprocessing manually (scaling, encoding, transformation)
+
+Learn how to fit transformers and models separately
+
+Observe how data leakage can occur if steps are not properly isolated
+
+Compare the workflow’s complexity and maintainability with the pipeline approach
+
+🧠 Key takeaways
+
+Manual steps = flexibility + higher risk. Doing each transformation by hand gives more control but increases the chance of mistakes.
+
+Pipelines = consistency. This notebook highlights why scikit-learn pipelines simplify the process.
+
+Transparency matters. Before automating, understanding the full process helps you debug and design better ML systems.
