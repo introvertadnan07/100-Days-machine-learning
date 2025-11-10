@@ -271,4 +271,39 @@ Manual steps = flexibility + higher risk. Doing each transformation by hand give
 
 Pipelines = consistency. This notebook highlights why scikit-learn pipelines simplify the process.
 
+22 – Titanic using Pipeline
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📖 Purpose
+
+This notebook applies a full pipeline workflow on the classic Titanic dataset. You’ll build preprocessing, encoding, feature-engineering and model training steps as a unified flow using tools like Pipeline, ColumnTransformer, and a classification algorithm. It shows how to move from raw CSV to a clean model in a structured, repeatable way.
+
+🎯 What you’ll cover
+
+Loading and preparing the Titanic dataset (features such as Pclass, Sex, Age, etc.)
+
+Handling missing values and feature engineering (e.g., combining SibSp + Parch, extracting titles)
+
+Building separate transformations for numerical and categorical data
+
+Integrating those transformations into a ColumnTransformer, then wrapping in a Pipeline along with model training
+
+Evaluating the model’s performance (accuracy, confusion matrix, etc) and interpreting results
+
+🧠 Why it matters
+
+Working through this notebook helps you understand:
+
+Why pipelines improve reproducibility and reduce errors compared to ad-hoc scripts
+
+How to structure code so preprocessing and model training are clearly separated and chained
+
+Best practices for real-world data workflows (feature selection, data leakage prevention, modularization)
+
+📂 How it fits in
+
+This is Day 22 of your series.
+It builds on previous days—which introduced pipelines and manual workflows—by taking a tangible dataset (Titanic) and applying a full end-to-end pipeline. It sets the foundation for even more complex workflows (hyperparameter tuning, deployment) in subsequent days.
+
 Transparency matters. Before automating, understanding the full process helps you debug and design better ML systems.
