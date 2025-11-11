@@ -307,3 +307,34 @@ This is Day 22 of your series.
 It builds on previous days—which introduced pipelines and manual workflows—by taking a tangible dataset (Titanic) and applying a full end-to-end pipeline. It sets the foundation for even more complex workflows (hyperparameter tuning, deployment) in subsequent days.
 
 Transparency matters. Before automating, understanding the full process helps you debug and design better ML systems.
+
+23 – Titanic Model Pipeline
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📖 Purpose
+
+This notebook takes the classic Titanic disaster dataset and builds a full, streamlined machine-learning pipeline: from data preparation, through feature engineering, all the way to model training and evaluation. The goal is to demonstrate how to assemble and manage a robust workflow for real-world ML problems.
+
+🎯 What you’ll cover
+
+Loading and cleaning the Titanic dataset
+
+Feature engineering: creating new features, encoding categorical variables, imputing missing values
+
+Constructing a preprocessing pipeline (handling numeric and categorical features separately)
+
+Building a complete pipeline that includes preprocessing + model training (e.g., classification algorithm)
+
+Evaluating model performance and understanding how each component contributes to the final outcome
+
+Inspecting and saving the pipeline for future reuse or deployment
+
+🧠 Why it matters
+
+Pipelines increase reproducibility and reduce risk of errors when deploying ML workflows.
+
+They ensure transformations applied during training are exactly the same during inference.
+
+This notebook connects the theory of pipelines with a concrete dataset and shows how to manage feature engineering + modelling in a clean, maintainable manner.
+
