@@ -338,3 +338,38 @@ They ensure transformations applied during training are exactly the same during 
 
 This notebook connects the theory of pipelines with a concrete dataset and shows how to manage feature engineering + modelling in a clean, maintainable manner.
 
+24 – Function Transformer
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📖 Purpose
+
+In this notebook you’ll explore how to use the FunctionTransformer (from scikit‑learn) to wrap custom functions into your preprocessing pipelines. This lets you apply bespoke transformations (e.g., custom feature engineering, mathematical operations) in the same consistent way you apply built-in transformers.
+
+scikit-learn.org
++1
+
+🎯 What you’ll cover
+
+Defining custom functions for data transformation (for example log-scaling, combining columns, feature extraction)
+
+Wrapping those functions into a FunctionTransformer so they behave like any other transformer (with fit, transform, and compatibility with pipelines)
+
+Incorporating the FunctionTransformer into a full pipeline (possibly with other preprocessing steps + model)
+
+Understanding the nuances: when to use custom functions vs built-in transformers, and what to watch out for (e.g., picklability when using lambda functions) 
+scikit-learn.org
++1
+
+Experimenting with the pipeline and seeing how your custom transform affects model performance or data flow
+
+🧠 Why it matters
+
+Flexibility: Built-in transformers cover many use-cases but not every unique manipulation you’ll need.
+
+Consistency: By wrapping custom transforms you keep your workflows pipeline-friendly, reusable, and fit for cross-validation or production.
+
+Maintainability: Everything plays nicely together in one pipeline structure rather than ad-hoc code scattered around.
+
+Risk control: Leveraging custom functions inside pipelines reduces the chance of data-leakage, ensures you apply operations uniformly across train/test splits.
+
