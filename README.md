@@ -373,3 +373,42 @@ Maintainability: Everything plays nicely together in one pipeline structure rath
 
 Risk control: Leveraging custom functions inside pipelines reduces the chance of data-leakage, ensures you apply operations uniformly across train/test splits.
 
+26 – Power Transform
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📖 Purpose
+
+In this notebook you explore the technique of using power-transformations (such as PowerTransformer in scikit‑learn) to make numerical features more “Gaussian-like”. This is a key preprocessing step when you have skewed data or variables whose distributions violate assumptions of some machine-learning models. 
+Scikit-learn
++1
+
+🎯 What you’ll cover
+
+Identifying numeric features with skew or non-normal distributions
+
+Applying the PowerTransformer (methods like “yeo-johnson” or “box-cox”) to stabilize variance and reduce skewness. 
+Scikit-learn
+
+Integrating a power transform into a preprocessing pipeline (e.g., combining with scaling/encoding)
+
+Visualising before/after distributions to measure the impact of transformation
+
+Observing how transformed data affects model training and evaluation
+
+Understanding when to use power transforms and when they may not offer benefit
+
+🧠 Why it matters
+
+Many models (especially linear ones) expect features to be roughly Gaussian or to have stable variance. Power transforms help bring distributions closer to that ideal. 
+MachineLearningMastery.com
+
+Reducing skew improves model robustness and interpretability of features.
+
+Building pipeline-friendly transformations ensures the same steps apply in train/test, avoiding data leakage.
+
+📂 How it fits in the series
+
+This is Day 26 of your series.
+It builds upon earlier preprocessing work (e.g., encoding, scaling, custom transforms) and adds one more powerful tool to your workflow. After this, you’re in a stronger position to build robust ML pipelines that handle real-world data quirks.
+
