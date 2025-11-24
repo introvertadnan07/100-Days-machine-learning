@@ -410,5 +410,43 @@ Building pipeline-friendly transformations ensures the same steps apply in train
 📂 How it fits in the series
 
 This is Day 26 of your series.
+
+27 – Binning and Binarization
+
+Part of the 100-Days-Machine-Learning series by introvertadnan07
+
+📖 Purpose
+
+This notebook introduces two important preprocessing techniques: binning (also known as discretization) and binarization (turning continuous or categorical features into binary features). These methods help when you want to simplify feature distributions or convert into a format many algorithms or models prefer.
+
+🎯 What you’ll cover
+
+Detecting features that may benefit from discretization (e.g., continuous numeric data with skew or wide ranges)
+
+Applying binning methods (fixed bins, quantile bins, custom thresholds)
+
+Converting features into binary form: thresholds, one-hot style, presence/absence flags
+
+Working with built-in transformers from libraries like scikit‑learn (e.g., KBinsDiscretizer, Binarizer)
+
+Integrating these transforms into a preprocessing pipeline and observing how they affect model behaviour
+
+Visualising before/after results: how distributions change, how discretized/binarised features behave
+
+Discussing when you shouldn’t use binning or binarization (loss of information, risk of arbitrary thresholds)
+
+🧠 Why it matters
+
+Some models or algorithms handle discrete/binary features more naturally or efficiently than highly continuous ones.
+
+Binning can reduce sensitivity to outliers or non-linear relationships by categorizing ranges.
+
+Binarization makes features more interpretable (e.g., “age > 40” flag) and often easier to include in simple modelling strategies.
+
+Ensuring these transformations are inside pipelines preserves consistency across train/test splits and avoids leakage.
+
+📂 How it fits in the series
+
+This is Day 27 of your series. Up to now you’ve covered scaling, encoding, power transforms, custom transforms etc. Binning and binarization build on that — now we’re dealing with ways to reshape feature distributions and format features for downstream algorithms. This sets a strong base for feature engineering and modelling days ahead.
 It builds upon earlier preprocessing work (e.g., encoding, scaling, custom transforms) and adds one more powerful tool to your workflow. After this, you’re in a stronger position to build robust ML pipelines that handle real-world data quirks.
 
