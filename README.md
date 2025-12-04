@@ -1,6 +1,6 @@
 # 100-Days-machine-learning
 
-A structured 100-day learning project focused on machine learning fundamentals, executed via Jupyter notebooks.
+A structured 100-day learning project focused on machine learning fundamentals, executed via Jupyter notebook
 
 🧭 Overview
 
