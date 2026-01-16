@@ -1,4 +1,4 @@
-# 100-Days-machine-learning 
+# 100-Days-machine-learning and maths
 A structured 100-day learning project focused on machine learning fundamentals, executed via Jupyter notebook
 
 🧭 Overview
