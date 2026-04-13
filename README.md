@@ -448,3 +448,6 @@ Ensuring these transformations are inside pipelines preserves consistency across
 This is Day 27 of your series. Up to now you’ve covered scaling, encoding, power transforms, custom transforms etc. Binning and binarization build on that — now we’re dealing with ways to reshape feature distributions and format features for downstream algorithms. This sets a strong base for feature engineering and modelling days ahead.
 It builds upon earlier preprocessing work (e.g., encoding, scaling, custom transforms) and adds one more powerful tool to your workflow. After this, you’re in a stronger position to build robust ML pipelines that handle real-world data quirks.
 
+ new ML algorithm add 
+
+new 
